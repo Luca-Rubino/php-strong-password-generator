@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkcyan;
+    color: lightgreen;
+    margin: 3rem 10%;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#title-page {
+    padding: 0 0 1.5rem 0;
+    font-size: 2rem;
+}
+
+#login {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
