@@ -1,11 +1,12 @@
 <?php 
+session_start();
 
-require __DIR__ '/src/login.php';
-include __DIR__ '/src/logout.php';
-include __DIR__ '/src/functions.php';
+session_unset();
 
-header( __DIR__ '/login.php');
-exit;
+header('location: ./src/utilities/login.php');
+
+
+$Prova = "Peppe";
 
 ?>
 
@@ -15,11 +16,18 @@ exit;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>php-strong-password-generator</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+
+    <header>
+        <h1 id="title-page">php-strong-password-generator</h1>
+    </header>
+    <main>
+        <h2>Benvenuto: <?php echo $Prova; ?>.</h2>
+    </main>
     <footer></footer>
+
 </body>
 </html>
