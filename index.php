@@ -1,10 +1,6 @@
 <?php 
-session_start();
 
-session_unset();
-
-header('location: ./src/utilities/login.php');
-
+header("Location: src/page/login.php");
 
 $Prova = "Peppe";
 
