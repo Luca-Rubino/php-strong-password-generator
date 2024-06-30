@@ -21,6 +21,15 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* css for class */
+
+.form-login {
+    display: flex;
+    justify-content: center;
+}
+
+/* css for id */
+
 #title-page {
     padding: 0 0 1.5rem 0;
     font-size: 2rem;
