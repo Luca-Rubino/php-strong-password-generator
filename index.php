@@ -1,9 +1,13 @@
 <?php 
 
-header("Location: src/page/login.php");
+// header("Location: src/page/login.php");
+include __DIR__ . "/src/utilities/user.php";
 
-$Prova = "Peppe";
+$prova = "Peppe";
 
+foreach ($users as $user) {
+    # code...
+}
 ?>
 
 
@@ -12,7 +16,7 @@ $Prova = "Peppe";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>php-strong-password-generator</title>
 </head>
 <body>
@@ -20,10 +24,12 @@ $Prova = "Peppe";
     <header>
         <h1 id="title-page">php-strong-password-generator</h1>
     </header>
-    <main>
-        <h2>Benvenuto: <?php echo $Prova; ?>.</h2>
+    <main id="main-index">
+        <h2>Benvenuto: <?php echo $prova; ?>.</h2>
+        <h2>Benvenuto: <?php echo $user["username"]; ?>.</h2>
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
 
 </body>
 </html>
