@@ -1,5 +1,11 @@
 <?php
 
+
+include __DIR__ . "/src/utilities/user.php";
+echo 'Utente: ' . $_POST['username'] . " " . 'Password:' . $_POST['userpassword'] . ".";
+
+
+echo print_r($users['username']);
 ?>
 
 <!DOCTYPE html>
@@ -11,11 +17,11 @@
 </head>
 <body>
     <h1 id="login">Login</h1>
-    <form action="../../index.php" method="post">
-        <label for="user-name">Username: </label>
-        <input type="text" name="user-name" id="user-name" placeholder="Username">
-        <label for="user-password">Password: </label>
-        <input type="password" name="user-password" id="user-password" placeholder="Password">
+    <form action="login.php" method="post">
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" placeholder="Username">
+        <label for="userpassword">Password: </label>
+        <input type="password" name="userpassword" id="userpassword" placeholder="Password">
         <input type="submit" value="Invia">
     </form>
 </body>
