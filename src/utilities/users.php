@@ -7,11 +7,11 @@ $users = [
     ],
     [
         'username' => 'Alberto Maggi',
-        'userpassword' => '1234'
+        'userpassword' => '4321'
     ],
     [
         'username' => 'Carla Forenzi',
-        'userpassword' => '1234'
+        'userpassword' => '3412'
     ]
 ];
 
