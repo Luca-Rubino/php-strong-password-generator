@@ -2,10 +2,9 @@
 session_start();
 
 include __DIR__ . "/src/utilities/users.php";
+require_once __DIR__ . "/src/utilities/functions.php";
 
-if (!isset($_SESSION["username"]) && !isset($_SESSION["userpassword"]) | $_SESSION["username"] = !1 && $_SESSION["userpassword"] = !1) {
-    header('Location: ./src/page/login.php');
-};
+Hiddenpage();
 
 $prova = "Peppe";
 
