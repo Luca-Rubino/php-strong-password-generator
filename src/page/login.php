@@ -1,16 +1,8 @@
 <?php
 
-// echo 'Utente: ' . $_POST['username'] . " " . 'Password:' . $_POST['userpassword'] . ".";
-
-
-// echo print_r($users['username']);
 session_start();
-include __DIR__ . "/src/utilities/user.php";
-$_SESSION["username"] = isset($_POST['username']);
 
-// if (isset(input[])) {
-//     # code...
-// }
+include __DIR__ . "/src/utilities/user.php";
 
 ?>
 

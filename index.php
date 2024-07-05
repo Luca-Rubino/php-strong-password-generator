@@ -1,13 +1,10 @@
 <?php 
+session_start();
 
-// header("Location: src/page/login.php");
-include __DIR__ . "/src/utilities/user.php";
+include __DIR__ . "/src/utilities/users.php";
 
 $prova = "Peppe";
 
-foreach ($users as $user) {
-    # code...
-}
 ?>
 
 
@@ -22,11 +19,18 @@ foreach ($users as $user) {
 <body>
 
     <header>
-        <h1 id="title-page">php-strong-password-generator</h1>
+        <section>
+            <h1 id="title-page">php-strong-password-generator</h1>
+        </section>
+        <section>
+            <a href="./src/page/logout.php">Logout</a>
+            <a href="./src/page/login.php">Login</a>  
+        </section>
+        
     </header>
     <main id="main-index">
-        <h2>Benvenuto: <?php echo $prova; ?>.</h2>
-        <h2>Benvenuto: <?php echo $user["username"]; ?>.</h2>
+        <!-- <h2>Benvenuto: <?php echo $prova; ?>.</h2> -->
+        <h2>Benvenuto: <?php echo $_POST["username"]; ?>.</h2>
     </main>
     <footer>
     </footer>
