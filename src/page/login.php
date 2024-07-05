@@ -4,6 +4,10 @@ session_start();
 
 include __DIR__ . "/src/utilities/user.php";
 
+$_POST["username"] = $_SESSION["username"];
+
+$_POST["userpassword"]= $_SESSION["userpassword"];
+
 ?>
 
 <!DOCTYPE html>
